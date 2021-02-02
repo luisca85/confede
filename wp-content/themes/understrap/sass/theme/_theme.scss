@@ -1,1 +1,159 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+$dark-blue: #1B2D45;
+$light-green: #427B86;
+$base-red: #F90015;
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	background-color: #EDF2F6;
+
+	
+}
+
+.wrapper {
+    padding: 0px ;
+}
+
+
+.nav-link{
+	color: $dark-blue;
+	border-bottom: 4px solid white;
+	line-height: 1.5;
+}
+
+.nav-link:hover{
+	color: $light-green;
+	border-bottom: 4px solid $light-green;
+}
+
+/* navegacion */
+
+.navbar{
+
+padding: 0px;
+box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
+
+
+}
+
+/* Fuentes */
+.desktop-subtitle{
+	font-family: Mina;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 26px;
+	/* or 118% */
+	color: #333333;
+}
+
+.desktop-regular{
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+}
+
+/* botones */
+
+.btn-secondary{
+	border: 2px solid $light-green;
+	border-radius: 0px;
+	font-family: Mina;
+	font-style: normal !important;
+	font-weight: bold !important;
+	font-size: 16px !important;
+	line-height: 40px;
+	background-color: transparent;
+	padding: 8px 16px !important;
+	margin: 8px 0px;
+}
+
+/* ultimas publicaciones */
+
+.corazon{
+	li{
+		background-color: white;
+		border-radius: 5px;
+		filter: drop-shadow(0px 1px 25px rgba(0, 0, 0, 0.15));
+		overflow: hidden;
+		display: flex;
+        flex-direction: column;
+
+		.wp-block-latest-posts__post-excerpt{
+			padding: 0px 30px 8px;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 20px;
+
+			a{
+				padding: 0px;
+			}
+		}
+
+		.wp-block-latest-posts__featured-image img {
+		    height: 100%;
+		    width: 100%;
+		}
+
+		a{
+			font-family: Mina;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 26px;
+			/* or 118% */
+			color: #333333;
+			padding: 50px 30px 8px;
+
+		}
+	}
+}
+
+/* agenda */
+
+.agenda{
+	background-color: white;
+		border-radius: 5px;
+		filter: drop-shadow(0px 1px 25px rgba(0, 0, 0, 0.15));
+		padding: 30px 25px;
+
+		a{
+			font-family: Mina;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 22px;
+			color: #333333;
+		}
+
+		li{
+			padding-bottom: 16px;
+		}
+}
+
+.is-style-wide{
+	border: 1px solid #427B86;
+}
+
+.ftn{
+
+	li{
+		display: flex;
+	}
+
+	.wp-block-latest-posts__featured-image img {
+	    height: auto;
+	    width: auto;
+	    max-width: none;
+	}
+}
+

@@ -150,7 +150,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 				'description'   => __( 'Full top widget with dynamic grid', 'understrap' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .static-hero-widget -->',
-				'before_title'  => '<h3 class="widget-title">',
+				'before_title'  => '<h3 class="desktop-subtitle text-white">',
 				'after_title'   => '</h3>',
 			)
 		);
@@ -162,10 +162,76 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 				'description'   => __( 'Full sized footer widget with dynamic grid', 'understrap' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .footer-widget -->',
-				'before_title'  => '<h3 class="widget-title">',
+				'before_title'  => '<h3 class="desktop-subtitle text-white">',
 				'after_title'   => '</h3>',
 			)
 		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer miembros', 'understrap' ),
+				'id'            => 'footermiembros',
+				'description'   => __( 'Full sized footer widget with dynamic grid', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h3 class="desktop-subtitle text-white">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Filiales', 'understrap' ),
+				'id'            => 'footerfiliales',
+				'description'   => __( 'Full sized footer widget with dynamic grid', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h3 class="desktop-subtitle text-white">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer left', 'understrap' ),
+				'id'            => 'footerleft',
+				'description'   => __( 'Full sized footer widget with dynamic grid', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h3 class="desktop-subtitle text-white">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer middle', 'understrap' ),
+				'id'            => 'footermiddle',
+				'description'   => __( 'Full sized footer widget with dynamic grid', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h3 class="desktop-subtitle text-white">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer right', 'understrap' ),
+				'id'            => 'footerright',
+				'description'   => __( 'Full sized footer widget with dynamic grid', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h3 class="desktop-subtitle text-white">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+
+
+
+
+
 
 	}
 } // endif function_exists( 'understrap_widgets_init' ).

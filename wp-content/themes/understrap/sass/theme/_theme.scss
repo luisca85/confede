@@ -14,31 +14,6 @@ body{
 	
 }
 
-.wrapper {
-    padding: 0px ;
-}
-
-
-.nav-link{
-	color: $dark-blue;
-	border-bottom: 4px solid white;
-	line-height: 1.5;
-}
-
-.nav-link:hover{
-	color: $light-green;
-	border-bottom: 4px solid $light-green;
-}
-
-/* navegacion */
-
-.navbar{
-
-padding: 0px;
-box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
-
-
-}
 
 /* Fuentes */
 .desktop-subtitle{
@@ -73,6 +48,38 @@ color: #333;
 .text-white{
 	color: white !important;
 }
+
+/* navegacion */
+
+
+.wrapper {
+    padding: 0px ;
+}
+
+
+.nav-link{
+	color: $dark-blue;
+	border-bottom: 4px solid white;
+	line-height: 1.5;
+}
+
+.nav-link:hover{
+	color: $light-green;
+	border-bottom: 4px solid $light-green;
+}
+
+
+.navbar{
+
+padding: 0px;
+box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* banner border */
+
+
 
 /* botones */
 
@@ -217,39 +224,6 @@ color: #333;
 	}
 }
 
-/* footer */
-
-.footer{
-color: white;
-background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
-/* shadow */
-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
-padding: 60px 0px 80px;
-}
-
-.back{
-	color: white;
-background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
-}
-.footer_2{
-	border-top: 1px solid $light-green;
-	padding-top: 32px;
-}
-
-.separador{
-	border: 1px solid #427B86;
-}
-
-.tag{
-	background-color: $dark-blue;
-	position: relative;
-	border-radius: 3px 0px 3px;
-	padding: 8px 16px;
-	top: 0;
-}
-
-
-
 
 .box-shadow{
 	transition: filter 0.3s ease-out 100ms;
@@ -311,5 +285,55 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 	padding: 16px;
 	img{
 		margin: 2px 16px ;
+	}
+}
+
+
+
+
+
+/* footer */
+
+footer{
+
+	a{
+		color: white;
+	}
+
+}
+
+.footer{
+color: white;
+background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
+/* shadow */
+box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
+padding: 60px 0px 80px;
+}
+
+.back{
+	color: white;
+background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
+}
+.footer_2{
+	border-top: 1px solid $light-green;
+	padding-top: 32px;
+}
+
+.separador{
+	border: 1px solid #427B86;
+}
+
+.tag{
+	background-color: $dark-blue;
+	position: relative;
+	border-radius: 3px 0px 3px;
+	padding: 8px 16px;
+	top: 0;
+}
+
+.social{
+	i{
+		font-size: 32px;
+		padding: 0px 8px;
 	}
 }

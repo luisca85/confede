@@ -16,13 +16,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <footer>
+
 	<div class="wrapper footer" id="wrapper-footer">
 
 		<div class="<?php echo esc_attr( $container ); ?>">
 
-			<div class="container">
-
 			   <div class="row">
+
 			  		
 			  		<div class="col-md-12">
 			  			<p>COMRA es miembro de:</p>
@@ -70,7 +70,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 				    </div>
 
 			  </div>
-			</div>
 		</div><!-- container end -->
 	</div><!-- wrapper end -->
 

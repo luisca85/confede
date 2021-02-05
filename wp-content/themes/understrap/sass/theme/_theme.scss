@@ -86,9 +86,31 @@ box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
 		}
 	}
 
+	.nav-link{
+		padding-right: 1rem!important;
+	    padding-left: 1rem!important;
+		}
+}
+
+.custom-toggler.navbar-toggler { 
+    border-color: lightgreen; 
+} 
+
+.navbar-toggler{
+	    position: relative;
+    bottom: 15px;
+    right: 5px;
+
 }
 
 
+
+/* banner */
+
+
+.n2-ss-align.n2-ss-align-visible {
+    z-index: -1;
+}
 
 
 

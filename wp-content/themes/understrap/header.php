@@ -39,10 +39,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md bg-white">
+		<nav class="navbar navbar-expand-md bg-white fixed-top">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container  sticky-top d-flex align-items-end  ">
+			<div class="container d-flex align-items-end  ">
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
@@ -64,7 +64,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} ?><!-- end custom logo -->
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+					</span>
 				</button>
 
 				<!-- The WordPress Menu goes here -->

@@ -21,13 +21,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="<?php echo esc_attr( $container ); ?>">
 
-			   <div class="row">
-
-			  		
+			  <div class="row">
 			  		<div class="col-md-12">
 			  			<p>COMRA es miembro de:</p>
 			  		</div>
-
 				    <div class="col-sm-4">
 				      <?php if ( !function_exists('dynamic_sidebar') ||
 						 !dynamic_sidebar('footermiembros') ) : ?>
@@ -36,20 +33,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 			  </div>
 
 			   <div class="row">
-			   	<div class="col-md-12">
-			  			<p>Filiales:</p>
-			  		</div>
-
-			  		
-				    <div class="col-sm">
+				   	<div class="col-md-12">
+				  		<p>Filiales:</p>
+				  	</div>
+					<div class="col-sm">
 				      <?php if ( !function_exists('dynamic_sidebar') ||
 						 !dynamic_sidebar('footerfiliales') ) : ?>
 						<?php endif; ?>
-				    </div>
+					</div>
+			  	</div>
 
-			  </div>
-
-			  <div class="row footer_2">
+			  	<div class="row footer_2">
 
 				    <div class="col-sm">
 				      <?php if ( !function_exists('dynamic_sidebar') ||
@@ -57,19 +51,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php endif; ?>
 				    </div>
 
-				    <div class="col-sm">
+				    <div class="col-sm  ">
 				     <?php if ( !function_exists('dynamic_sidebar') ||
 						 !dynamic_sidebar('footermiddle') ) : ?>
 						<?php endif; ?>
 				    </div>
 
-				    <div class="col-sm">
+				    <div class="col-sm ">
 				      <?php if ( !function_exists('dynamic_sidebar') ||
 						 !dynamic_sidebar('footerright') ) : ?>
 						<?php endif; ?>
 				    </div>
 
-			  </div>
+			  	</div>
+
 		</div><!-- container end -->
 	</div><!-- wrapper end -->
 
@@ -77,9 +72,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page we need this extra closing tag here -->
 
+
+
 <?php wp_footer(); ?>
 
 </body>
+
 
 </html>
 

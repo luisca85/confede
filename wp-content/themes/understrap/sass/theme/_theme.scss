@@ -59,8 +59,8 @@ color: #333;
 
 .nav-link{
 	color: $dark-blue;
-	border-bottom: 4px solid white;
 	line-height: 1.5;
+	border-bottom: 4px solid white;
 }
 
 .nav-link:hover{
@@ -70,14 +70,25 @@ color: #333;
 
 
 .navbar{
-
 padding: 0px;
 box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
+
+	.active{
+		.nav-link{
+		color: $dark-blue;
+		line-height: 1.5;
+		border-bottom: solid 4px $light-green;
+		}
+
+		.nav-link:hover{
+		color: $light-green;
+		border-bottom: solid 4px solid white;
+		}
+	}
 
 }
 
 
-/* banner border */
 
 
 
@@ -317,6 +328,8 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 .footer_2{
 	border-top: 1px solid $light-green;
 	padding-top: 32px;
+
+
 }
 
 .separador{
@@ -337,3 +350,13 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 		padding: 0px 8px;
 	}
 }
+
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
+ .carousel { 
+ width:200px; 
+ height:200px; 
+ } 

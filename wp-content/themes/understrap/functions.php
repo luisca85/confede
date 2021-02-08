@@ -35,3 +35,6 @@ foreach ( $understrap_includes as $file ) {
 }
 
 
+add_theme_support( 'align-wide' );
+
+

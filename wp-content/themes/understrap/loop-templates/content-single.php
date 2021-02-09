@@ -9,41 +9,42 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<div class="post-box ">
+	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+		<div class="image-post">
+			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+		</div>
+		<div class="entry-content content-post desktop-regular">
+			<header class="entry-header">
+				<?php the_title( '<h1 class="desktop-subtitle">', '</h1>' ); ?>
 
-	<header class="entry-header">
+				<div class="entry-meta">
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<?php understrap_posted_on(); ?>
 
-		<div class="entry-meta">
+				</div><!-- .entry-meta -->
+				<br>
+			</header><!-- .entry-header -->
 
-			<?php understrap_posted_on(); ?>
+				<div class="entry-content">
 
-		</div><!-- .entry-meta -->
+					<?php the_content(); ?>
 
-	</header><!-- .entry-header -->
+					<?php
+					wp_link_pages(
+						array(
+							'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+							'after'  => '</div>',
+						)
+					);
+					?>
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+				</div><!-- .entry-content -->
 
-	<div class="entry-content">
+			<?php understrap_entry_footer(); ?>
 
-		<?php the_content(); ?>
 
-		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+		</div><!-- .entry-content -->
 
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php understrap_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
+	</article><!-- #post-## -->
+</div>

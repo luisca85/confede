@@ -8,49 +8,61 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
+<div class="post-box ">
+	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+		
+	
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+		<div class="image-post">
+			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+		</div>
 
-	<header class="entry-header">
 
-		<?php
-		the_title(
-			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-			'</a></h2>'
-		);
-		?>
+		<div class="entry-content content-post desktop-regular">
 
-		<?php if ( 'post' == get_post_type() ) : ?>
 
-			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
+			<header class="entry-header">
 
-		<?php endif; ?>
 
-	</header><!-- .entry-header -->
+				<?php if ( 'post' == get_post_type() ) : ?>
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+					<div class="entry-meta desktop-small">
+						<?php understrap_posted_on(); ?>
+					</div><!-- .entry-meta -->
 
-	<div class="entry-content">
+				<?php endif; ?>
+				<br>
 
-		<?php the_excerpt(); ?>
+			</header><!-- .entry-header -->
 
-		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
 
-	</div><!-- .entry-content -->
+					<?php
+			the_title(
+				sprintf( '<h2 class="desktop-subtitle"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
+				'</a></h2>'
+			);
+			?>
 
-	<footer class="entry-footer">
+			<br>
 
-		<?php understrap_entry_footer(); ?>
+			<?php the_excerpt(); ?>
 
-	</footer><!-- .entry-footer -->
+			<?php
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+					'after'  => '</div>',
+				)
+			);
+			?>
 
-</article><!-- #post-## -->
+			<br>
+
+			<?php understrap_entry_footer(); ?>
+
+
+		</div><!-- .entry-content -->
+
+	</article><!-- #post-## -->
+</div>
+

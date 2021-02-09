@@ -52,7 +52,5 @@ if ( is_front_page() ) {
 
 
 
-
-
 <?php
 get_footer();

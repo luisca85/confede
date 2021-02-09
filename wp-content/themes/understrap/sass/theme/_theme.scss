@@ -12,9 +12,23 @@ body{
 	background-color: #EDF2F6;
 	overflow-x:  hidden;
 
-	.container{
-		
+
+	.wrapper{
+		padding-top: 100px;
 	}
+
+	
+
+
+	a{
+			color:$dark-blue;
+		}
+
+		a:hover{
+			color:$light-green;
+		}
+
+	
 }
 
 
@@ -45,8 +59,8 @@ body{
 font-family: Roboto;
 font-style: normal;
 font-weight: 300;
-font-size: 14px;
-line-height: 20px;
+font-size: 16px;
+line-height: 26px;
 color: #333;
 }
 
@@ -55,6 +69,15 @@ font-family: Mina;
 font-style: normal;
 font-weight: bold;
 font-size: 16px;
+line-height: 16px;
+color: #333;
+
+}
+
+.desktop-small{
+font-family: Mina;
+font-style: normal;
+font-size: 14px;
 line-height: 16px;
 color: #333;
 
@@ -142,10 +165,28 @@ box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
 	line-height: 24px;
 	background-color: transparent;
 	padding: 8px 16px !important;
+	color: $light-green;
 	
 }
 
+.nav-previous,.nav-next{
+	background-color: white;
+	margin: 8px 0px 32px 0px;
 
+	a{
+		background-color: $dark-blue;
+		padding: 16px;
+		border-radius: 10px;
+		color: white;
+	}
+
+	a:hover{
+		background-color: $light-green;
+		padding: 16px;
+		border-radius: 10px;
+		color: white;
+	}
+}
 
 /* ultimas publicaciones */
 
@@ -415,3 +456,71 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
  width:200px; 
  height:200px; 
  } 
+
+
+
+
+ /* widgets right sidebar */
+
+ .widget-box{
+ 	.widget{
+ 		background-color: white;
+ 		border-radius: 10px;
+		box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
+		padding: 32px;
+		margin-bottom: 16px;
+
+		.widget-title{
+			padding: 0px 0px 8px 0px;
+			border-bottom: 1px solid $dark-blue;
+		}
+
+		a{
+			color:$dark-blue;
+			font-family: Mina;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 18px;
+		}
+
+		a:hover{
+			color:$light-green;
+		}
+
+		ul{
+
+			padding: 0px;
+			li{
+				list-style: none;
+				margin-bottom: 8px;
+
+			}
+		}
+
+ 	}
+ }
+
+
+ /* Post content styles */
+.post-box{
+		background-color: white;
+ 		border-radius: 10px;
+		box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
+		margin-bottom: 16px;
+		overflow: hidden;
+
+  }
+
+.image-post{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	img{
+		width: 100%;
+	}
+}
+
+.content-post{
+	padding: 32px;
+}

@@ -169,6 +169,12 @@ box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
 	
 }
 
+.btn-secondary:hover {
+    color: #fff;
+    background-color: $dark-blue;
+    border-color:$dark-blue;
+}
+
 .nav-previous,.nav-next{
 	background-color: white;
 	margin: 8px 0px 32px 0px;
@@ -186,6 +192,20 @@ box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
 		border-radius: 10px;
 		color: white;
 	}
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $dark-blue;
+    border-color:$dark-blue;
+}
+
+
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $light-green;
+    border-color:$light-green;
 }
 
 /* ultimas publicaciones */
@@ -363,7 +383,7 @@ box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	overflow: hidden;
-	margin-bottom: 16px;
+	margin: 16px 0px 16px 0px;
 	transition: filter 0.3s ease-out 100ms;
 	filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, 0.15));
 
@@ -378,6 +398,7 @@ box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
 
 .instituciones{
 	border-radius: 10px;
+	margin: 16px 0px 16px 0px;
 	background-color: white;
 	padding: 16px;
 	img{

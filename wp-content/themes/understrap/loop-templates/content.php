@@ -8,21 +8,19 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
+<div class="title-box">
+	<span>PRENSA</span>
+</div>
 <div class="post-box ">
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-		
-	
 
 		<div class="image-post">
 			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 		</div>
 
-
 		<div class="entry-content content-post desktop-regular">
 
-
 			<header class="entry-header">
-
 
 				<?php if ( 'post' == get_post_type() ) : ?>
 
@@ -34,7 +32,6 @@ defined( 'ABSPATH' ) || exit;
 				<br>
 
 			</header><!-- .entry-header -->
-
 
 					<?php
 			the_title(

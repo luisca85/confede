@@ -13,7 +13,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
-
+<br>
 <div class="wrapper" id="search-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<header class="page-header">
 
-							<h1 class="page-title">
+							<h1 class="desktop-medium">
 								<?php
 								printf(
 									/* translators: %s: query term */

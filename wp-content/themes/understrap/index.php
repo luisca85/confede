@@ -25,6 +25,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="index-wrapper">
 
+<div class="box-title desktop-title">
+	<?php wp_title(''); ?>
+	</div>
+
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">

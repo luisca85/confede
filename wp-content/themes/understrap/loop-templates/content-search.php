@@ -9,13 +9,15 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
+
+
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
 		<?php
 		the_title(
-			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
+			sprintf( '<h2 class="desktop-subtitle"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
 			'</a></h2>'
 		);
 		?>

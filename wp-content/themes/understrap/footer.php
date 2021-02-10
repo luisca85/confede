@@ -45,19 +45,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			  	<div class="row footer_2">
 
-				    <div class="col-sm">
+				    <div class="col-sm-4">
 				      <?php if ( !function_exists('dynamic_sidebar') ||
 						 !dynamic_sidebar('footerleft') ) : ?>
 						<?php endif; ?>
 				    </div>
 
-				    <div class="col-sm  ">
+				    <div class="col-sm-4  ">
 				     <?php if ( !function_exists('dynamic_sidebar') ||
 						 !dynamic_sidebar('footermiddle') ) : ?>
 						<?php endif; ?>
 				    </div>
 
-				    <div class="col-sm ">
+				    <div class="col-sm-4 ">
 				      <?php if ( !function_exists('dynamic_sidebar') ||
 						 !dynamic_sidebar('footerright') ) : ?>
 						<?php endif; ?>

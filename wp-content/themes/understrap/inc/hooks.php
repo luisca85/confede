@@ -50,3 +50,5 @@ if ( ! function_exists( 'understrap_add_site_info' ) ) {
 		echo apply_filters( 'understrap_site_info_content', $site_info ); // WPCS: XSS ok.
 	}
 }
+
+

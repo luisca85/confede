@@ -620,7 +620,7 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 
  }
 
- .sublista {
+ .sublista-box {
 
 
 	p{
@@ -631,15 +631,15 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 
 	li{
 		background-color: white;
-		border-bottom:solid 1px $light-green;
 		overflow: hidden;
 		display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 16px 0px;
+        border-radius: 10px;
         box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
 
 		.wp-block-latest-posts__post-excerpt{
-			padding: 0px 30px 8px;
+			padding: 8px 30px 8px;
 			font-family: Roboto;
 			font-style: normal;
 			font-weight: 400;
@@ -677,7 +677,8 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 }
 
 
- .sublista-box {
+
+ .sublista {
 
 
 	p{
@@ -693,10 +694,9 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 		display: flex;
         flex-direction: row;
         margin: 16px 0px;
-        border-radius: : 
 
 		.wp-block-latest-posts__post-excerpt{
-			padding: 0px 30px 8px;
+			padding: 8px 30px 8px;
 			font-family: Roboto;
 			font-style: normal;
 			font-weight: 400;
@@ -732,6 +732,8 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 
 
 }
+
+
 
 
  /*Dèportes */

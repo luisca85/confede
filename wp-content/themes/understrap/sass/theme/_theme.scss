@@ -634,7 +634,7 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 		border-bottom:solid 1px $light-green;
 		overflow: hidden;
 		display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 16px 0px;
 
 		.wp-block-latest-posts__post-excerpt{
@@ -658,14 +658,15 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 		}
 
 		a{
-			font-family: Mina;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 22px;
-			line-height: 26px;
-			/* or 118% */
-			color:$dark-blue;
-			padding: 50px 30px 8px;
+			
+		    font-family: Mina;
+		    font-style: normal;
+		    font-weight: 700;
+		    font-size: 22px;
+		    line-height: 26px;
+		    color: #1b2d45;
+		    padding: 16px 0px 0px 16px;
+
 
 
 		}

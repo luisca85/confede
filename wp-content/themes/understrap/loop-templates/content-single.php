@@ -10,10 +10,9 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
-
 <div class="post-box ">
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-		
+
 <!-- 		<div class="image-post">
 						<?php
 			// Must be inside a loop.

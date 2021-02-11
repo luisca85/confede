@@ -8,7 +8,6 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
-
 <div class="post-box ">
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 

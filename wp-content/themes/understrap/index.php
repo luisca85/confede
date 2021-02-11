@@ -30,7 +30,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-
 		<div class="row">
 			
 

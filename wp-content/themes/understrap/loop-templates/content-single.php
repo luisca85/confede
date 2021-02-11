@@ -5,15 +5,29 @@
  * @package understrap
  */
 
+
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
 
 <div class="post-box ">
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-		<div class="image-post">
-			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-		</div>
+		
+<!-- 		<div class="image-post">
+						<?php
+			// Must be inside a loop.
+			 
+			if ( has_post_thumbnail() ) {
+			    the_post_thumbnail();
+			}
+			else {
+			    echo '';
+			}
+			?>
+		</div> -->
+
+
 		<div class="entry-content content-post desktop-regular">
 			<header class="entry-header">
 				<?php the_title( '<h1 class="desktop-subtitle">', '</h1>' ); ?>

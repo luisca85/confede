@@ -613,6 +613,11 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
  		 	border: none;
 
  	}
+
+ 	[aria-selected=false]{
+		background-color: #ccc;
+	}
+
  }
 
  .sublista {
@@ -665,6 +670,8 @@ background: linear-gradient(180deg, #427B86 0%, #1B2D45 82.29%);
 
 		}
 	}
+
+
 }
 
 

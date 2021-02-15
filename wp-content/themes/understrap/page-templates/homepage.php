@@ -50,31 +50,7 @@ if ( is_front_page() ) {
 
 </div><!-- #full-width-page-wrapper -->
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
-			<div class="box-shadow box-completa d-flex flex-column">
-				<div class="desktop-subtitle mt-3 text-center">Olimpiadas medicas</div>
-				<img class="img-fluid mx-auto mt-4 mb-4" src="https://www.comra.org.ar/new/wp-content/uploads/2021/02/olimpics-2.png">
-				<a class="align-self-end" href="">Leer más</a>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-12">
-			<div class="box-shadow box-completa d-flex flex-column">
-				<div class="desktop-subtitle mt-3 text-center">Olimpiadas medicas</div>
-				<img class="img-fluid mx-auto mt-4 mb-4" src="https://www.comra.org.ar/new/wp-content/uploads/2021/02/olimpics-2.png">
-				<a class="align-self-end" href="">Leer más</a>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-12">
-			<div class="box-shadow box-completa d-flex flex-column">
-				<div class="desktop-subtitle mt-3 text-center">Olimpiadas medicas</div>
-				<img class="img-fluid mx-auto mt-4 mb-4" src="https://www.comra.org.ar/new/wp-content/uploads/2021/02/olimpics-2.png">
-				<a class="align-self-end" href="">Leer más</a>
-			</div>
-		</div>
-	</div>
-</div>
+
 
 <?php
 get_footer();

@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md bg-white fixed-top">
+		<nav class="navbar navbar-expand-md bg-white ">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container d-flex align-items-end  ">
@@ -69,7 +69,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</span>
 				</button>
 
-				<!-- The WordPress Menu goes here -->
+				<div class=" row d-flex align-items-end ">
+					<div class="social">
+						twitter
+					</div>
+				</div>
+
+			
+					<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
@@ -82,6 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+				
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
@@ -89,3 +97,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
+
+
+   

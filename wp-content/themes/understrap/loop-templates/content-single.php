@@ -11,6 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
+
 <div class="post-box ">
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
@@ -26,6 +27,7 @@ defined( 'ABSPATH' ) || exit;
 			}
 			?>
 		</div> 
+
 
 		<div class="entry-content content-post desktop-regular">
 			<header class="entry-header">

@@ -10,10 +10,11 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
+
 <div class="post-box ">
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-<!-- 		<div class="image-post">
+		<div class="image-post">
 						<?php
 			// Must be inside a loop.
 			 
@@ -24,8 +25,7 @@ defined( 'ABSPATH' ) || exit;
 			    echo '';
 			}
 			?>
-		</div> -->
-
+		</div> 
 
 		<div class="entry-content content-post desktop-regular">
 			<header class="entry-header">

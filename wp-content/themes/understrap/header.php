@@ -69,13 +69,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</span>
 				</button>
 
-				<div class=" row d-flex align-items-end ">
-					<div class="social">
-						twitter
-					</div>
-				</div>
 
-			
 					<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(

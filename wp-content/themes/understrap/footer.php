@@ -66,6 +66,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 			  	</div>
 
 		</div><!-- container end -->
+
+			<?php
+echo do_shortcode('[smartslider3 slider="2"]');
+?>
+
+		
 	</div><!-- wrapper end -->
 
 </footer>

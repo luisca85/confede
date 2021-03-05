@@ -25,9 +25,15 @@ if ( is_front_page() ) {
 
 		<div class="row">
 
+
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
+
+								<?php
+echo do_shortcode('[smartslider3 slider="2"]');
+?>
+
 
 					<?php
 					while ( have_posts() ) {

@@ -37,8 +37,7 @@ foreach ( $understrap_includes as $file ) {
 
 add_theme_support( 'align-wide' );
 
-// Cambi ar texto de "read more"
-function be_excerpt_more( $more ) {
-    return 'Leer más ...';
+function modify_read_more_link() {
+    return '<a class="more-link btn-read-more" href="' . get_permalink() . '"> Leer más </a>';
 }
-add_filter( 'excerpt_more', 'be_excerpt_more' );
+add_filter( 'the_content_more_link', 'modify_read_more_link' );

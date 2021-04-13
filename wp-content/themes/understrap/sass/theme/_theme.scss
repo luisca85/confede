@@ -309,10 +309,23 @@ box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
 /* caja de video */
 
 .video{
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+@include media-breakpoint-up(sm) { 
+
+.video{
 	border-radius: 5px;
     overflow: hidden;
     height: 400px;
 }
+
+ }
+
+
 
 /* agenda */
 

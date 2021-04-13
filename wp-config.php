@@ -20,23 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'comraorg_web2021' );
-
+define( 'DB_NAME', 'comra-web' );
 /** MySQL database username */
-define( 'DB_USER', 'comraorg_2021' );
-
+define( 'DB_USER', 'root' );
 /** MySQL database password */
-define( 'DB_PASSWORD', '80773963' );
-
+define( 'DB_PASSWORD', '' );
 /** MySQL hostname */
-define( 'DB_HOST', 'server1' );
-
-/** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
-
-/** The Database Collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
-
+define( 'DB_HOST', 'localhost' );
 /**#@+
  * Authentication Unique Keys and Salts.
  *

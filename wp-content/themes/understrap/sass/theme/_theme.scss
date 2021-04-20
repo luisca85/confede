@@ -339,10 +339,8 @@ box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
 			}
 		}
 
-		.wp-block-latest-posts__featured-image img {
-		    height: 100%;
-		    width: 250px; 
-		}
+
+
 
 		a{
 			font-family: Mina;
@@ -357,6 +355,13 @@ box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
 
 		}
 	}
+}
+
+
+
+.deportes li .wp-block-latest-posts__featured-image img {
+    height: 250px;
+    width: 100%;
 }
 
 /* caja de video */
